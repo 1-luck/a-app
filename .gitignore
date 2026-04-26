@@ -1,0 +1,19 @@
+# Streamlit secrets - 最重要！
+.streamlit/
+secrets.toml
+*.toml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
