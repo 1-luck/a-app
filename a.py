@@ -98,7 +98,7 @@ for message in st.session_state.messages:
 #     api_key=os.environ.get('DEEPSEEK_API_KEY'),
 #     base_url="https://api.deepseek.com")
 client = OpenAI(
-    api_key=st.secrets('DEEPSEEK_API_KEY'),
+    api_key=st.secrets['DEEPSEEK_API_KEY'],
     base_url="https://api.deepseek.com")
 
 
