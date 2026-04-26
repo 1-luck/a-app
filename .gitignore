@@ -16,4 +16,5 @@ env/
 
 # OS
 .DS_Store
-Thumbs.dbsession/
+Thumbs.db
+session/
