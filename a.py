@@ -4,7 +4,6 @@ import json
 from datetime import datetime
 from openai import OpenAI
 
-
 st.set_page_config(
     page_title="AI智能对话助手",
     page_icon="💬",
@@ -95,8 +94,11 @@ st.text(f"会话名称：{st.session_state.current_session}")
 for message in st.session_state.messages:
     st.chat_message(message["role"]).write(message["content"])
 
+# client = OpenAI(
+#     api_key=os.environ.get('DEEPSEEK_API_KEY'),
+#     base_url="https://api.deepseek.com")
 client = OpenAI(
-    api_key=os.environ.get('DEEPSEEK_API_KEY'),
+    api_key=st.secrets('DEEPSEEK_API_KEY'),
     base_url="https://api.deepseek.com")
 
 
