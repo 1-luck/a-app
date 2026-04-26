@@ -279,7 +279,7 @@ if "messages" not in st.session_state:
 if "nick_name" not in st.session_state:
     st.session_state.nick_name = "小二"
 if "nature" not in st.session_state:
-    st.session_state.nature = "吆五喝六的街溜子"
+    st.session_state.nature = "无所不知的小助手"
 if "current_session" not in st.session_state:
     st.session_state.current_session = "新对话"
 if "is_first_message" not in st.session_state:
